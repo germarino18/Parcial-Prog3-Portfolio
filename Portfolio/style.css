@@ -1,0 +1,136 @@
+/* Global */
+:root {
+    --bg-gray: #f3f3f3;
+    --muted: #6c757d;
+    --accent-green: #2f9a4d;
+    --white: #ffffff;
+    --card-shadow: 0 6px 18px rgba(15, 15, 15, 0.04);
+}
+
+html, body {
+    height: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* NAVBAR */
+header .navbar {
+    padding: 1rem 0;
+}
+.navbar-brand { letter-spacing: 1px; }
+.nav-link { color: #111 !important; }
+
+/*INICIO */
+#inicio {
+    height: 100vh;
+    background-color: var(--bg-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* space for fixed navbar */
+    text-align: center;
+}
+#inicio h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+#inicio p.lead {
+    max-width: 800px;
+    color: var(--muted);
+}
+
+
+/* SOBRE MI */
+#sobre-mi {
+    background-color: var(--bg-gray);
+}
+
+#sobre-mi h2 {
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+#sobre-mi p { 
+    color: var(--muted); 
+}
+
+/* Habilidades chips */
+.skill-badge {
+    display: inline-block;
+    background: var(--white);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: var(--card-shadow);
+    font-size: 0.95rem;
+}
+
+/* Botón verde */
+.btn-contact {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+.btn-contact:hover {
+    background-color: #23803f;
+    color: #fff;
+}
+
+/* PROYECTOS cards */
+
+#proyectos{
+    background-color: var(--bg-gray);
+}
+
+
+.card {
+    border: none;
+    border-radius: .6rem;
+    overflow: hidden;
+}
+.card-img-top { 
+    object-fit: cover; 
+    height: 180px; 
+}
+
+/* CONTACTO */
+#contacto { 
+    background: var(--bg-gray); 
+}
+
+#contacto .form-label { 
+    font-weight: 600; 
+}
+
+.btn-contact{
+    background-color: var(--accent-green);
+}
+
+/* FOOTER */
+footer { 
+    background: #fff; 
+}
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+    #inicio h1 { 
+        font-size: 3.2rem; 
+    }
+    #sobre-mi h2 { 
+        font-size: 2.6rem; 
+    }
+}
+
+@media (max-width: 575px) {
+    #inicio h1 { 
+        font-size: 1.8rem; 
+        padding: 0 1rem; 
+    }
+    .card-img-top {
+        height: 140px;
+    }
+}
